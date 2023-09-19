@@ -1,0 +1,10 @@
+C:\Users\NOTSJC547Demaria\Desktop\Projeto\RPGCompanion\obj\Debug\RPGCompanion.csproj.AssemblyReference.cache
+C:\Users\NOTSJC547Demaria\Desktop\Projeto\RPGCompanion\obj\Debug\RPGCompanion.frmFichaPlayer.resources
+C:\Users\NOTSJC547Demaria\Desktop\Projeto\RPGCompanion\obj\Debug\RPGCompanion.csproj.GenerateResource.cache
+C:\Users\NOTSJC547Demaria\Desktop\Projeto\RPGCompanion\bin\Debug\RPGCompanion.exe.config
+C:\Users\NOTSJC547Demaria\Desktop\Projeto\RPGCompanion\bin\Debug\RPGCompanion.exe
+C:\Users\NOTSJC547Demaria\Desktop\Projeto\RPGCompanion\bin\Debug\RPGCompanion.pdb
+C:\Users\NOTSJC547Demaria\Desktop\Projeto\RPGCompanion\obj\Debug\RPGCompanion.Properties.Resources.resources
+C:\Users\NOTSJC547Demaria\Desktop\Projeto\RPGCompanion\obj\Debug\RPGCompanion.csproj.CoreCompileInputs.cache
+C:\Users\NOTSJC547Demaria\Desktop\Projeto\RPGCompanion\obj\Debug\RPGCompanion.exe
+C:\Users\NOTSJC547Demaria\Desktop\Projeto\RPGCompanion\obj\Debug\RPGCompanion.pdb

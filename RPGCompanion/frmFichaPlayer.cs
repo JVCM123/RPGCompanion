@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace RPGCompanion
 {
-    public partial class Form1 : Form
+    public partial class frmFichaPlayer : Form
     {
-        public Form1()
+        public frmFichaPlayer()
         {
             InitializeComponent();
         }
