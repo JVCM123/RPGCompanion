@@ -10,11 +10,22 @@ namespace RPGCompanion.Classes
     {
         Random rand = new Random();
 
+        /// <summary>
+        /// Rolagem simples de dado
+        /// </summary>
+        /// <param name="dado">Indica qual dado será rolado, ex: 20 -> D20</param>
+        /// <returns></returns>
         public int Rolar(int dado)
         {
             return rand.Next(1, dado);
         }
 
+        /// <summary>
+        /// Rolagem de dado com adição de modificador de atributo do jogador/monstro
+        /// </summary>
+        /// <param name="dado">Indica qual dado será rolado, ex: 20 -> D20</param>
+        /// <param name="mod">Modificador do atributo a ser somado ao resultado da rolagem</param>
+        /// <returns></returns>
         public int Rolar(int dado, int mod)
         {
             return (rand.Next(1, dado) + mod);

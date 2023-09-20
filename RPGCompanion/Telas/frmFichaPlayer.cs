@@ -27,6 +27,8 @@ namespace RPGCompanion
                 Dificuldade = "5+"
             };
 
+
+
             dgvHabilidades.DataSource = new List<Habilidade>() { hab };
 
 
