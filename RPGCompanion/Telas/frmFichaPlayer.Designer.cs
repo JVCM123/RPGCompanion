@@ -31,11 +31,11 @@ namespace RPGCompanion
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFichaPlayer));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabGeral = new System.Windows.Forms.TabPage();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -60,6 +60,7 @@ namespace RPGCompanion
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.lblOuro = new System.Windows.Forms.Label();
             this.lblClasse = new System.Windows.Forms.Label();
             this.lblVida = new System.Windows.Forms.Label();
@@ -67,13 +68,17 @@ namespace RPGCompanion
             this.lblNome = new System.Windows.Forms.Label();
             this.tabHabilidades = new System.Windows.Forms.TabPage();
             this.dgvHabilidades = new System.Windows.Forms.DataGridView();
-            this.tabItens = new System.Windows.Forms.TabPage();
-            this.tabHistoria = new System.Windows.Forms.TabPage();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.habilidadeModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descricaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dificuldadeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.habilidadeModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tabItens = new System.Windows.Forms.TabPage();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.tabHistoria = new System.Windows.Forms.TabPage();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tabControl.SuspendLayout();
             this.tabGeral.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -83,6 +88,9 @@ namespace RPGCompanion
             this.tabHabilidades.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHabilidades)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.habilidadeModelBindingSource)).BeginInit();
+            this.tabItens.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl
@@ -116,9 +124,9 @@ namespace RPGCompanion
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(349, 334);
+            this.pictureBox2.Location = new System.Drawing.Point(349, 324);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(250, 250);
+            this.pictureBox2.Size = new System.Drawing.Size(250, 260);
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             // 
@@ -354,6 +362,7 @@ namespace RPGCompanion
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.SaddleBrown;
+            this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.lblOuro);
             this.groupBox1.Controls.Add(this.lblClasse);
             this.groupBox1.Controls.Add(this.lblVida);
@@ -363,17 +372,26 @@ namespace RPGCompanion
             this.groupBox1.ForeColor = System.Drawing.SystemColors.Info;
             this.groupBox1.Location = new System.Drawing.Point(326, 6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(297, 171);
+            this.groupBox1.Size = new System.Drawing.Size(297, 197);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Informações";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(6, 83);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(76, 20);
+            this.label7.TabIndex = 5;
+            this.label7.Text = "Humano";
             // 
             // lblOuro
             // 
             this.lblOuro.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.lblOuro.AutoSize = true;
-            this.lblOuro.Location = new System.Drawing.Point(6, 135);
+            this.lblOuro.Location = new System.Drawing.Point(6, 161);
             this.lblOuro.Name = "lblOuro";
             this.lblOuro.Size = new System.Drawing.Size(78, 20);
             this.lblOuro.TabIndex = 4;
@@ -384,7 +402,7 @@ namespace RPGCompanion
             this.lblClasse.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.lblClasse.AutoSize = true;
-            this.lblClasse.Location = new System.Drawing.Point(6, 83);
+            this.lblClasse.Location = new System.Drawing.Point(6, 109);
             this.lblClasse.Name = "lblClasse";
             this.lblClasse.Size = new System.Drawing.Size(75, 20);
             this.lblClasse.TabIndex = 3;
@@ -395,7 +413,7 @@ namespace RPGCompanion
             this.lblVida.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.lblVida.AutoSize = true;
-            this.lblVida.Location = new System.Drawing.Point(6, 109);
+            this.lblVida.Location = new System.Drawing.Point(6, 135);
             this.lblVida.Name = "lblVida";
             this.lblVida.Size = new System.Drawing.Size(120, 20);
             this.lblVida.TabIndex = 2;
@@ -440,28 +458,28 @@ namespace RPGCompanion
             this.dgvHabilidades.BackgroundColor = System.Drawing.Color.SaddleBrown;
             this.dgvHabilidades.CausesValidation = false;
             this.dgvHabilidades.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvHabilidades.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvHabilidades.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvHabilidades.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvHabilidades.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.nomeDataGridViewTextBoxColumn,
             this.descricaoDataGridViewTextBoxColumn,
             this.dificuldadeDataGridViewTextBoxColumn});
             this.dgvHabilidades.DataSource = this.habilidadeModelBindingSource;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvHabilidades.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvHabilidades.DefaultCellStyle = dataGridViewCellStyle10;
             this.dgvHabilidades.Enabled = false;
             this.dgvHabilidades.GridColor = System.Drawing.Color.DarkGreen;
             this.dgvHabilidades.Location = new System.Drawing.Point(8, 6);
@@ -478,15 +496,107 @@ namespace RPGCompanion
             this.dgvHabilidades.TabIndex = 0;
             this.dgvHabilidades.VirtualMode = true;
             // 
+            // nomeDataGridViewTextBoxColumn
+            // 
+            this.nomeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.nomeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle7;
+            this.nomeDataGridViewTextBoxColumn.FillWeight = 25F;
+            this.nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
+            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
+            this.nomeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.nomeDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // descricaoDataGridViewTextBoxColumn
+            // 
+            this.descricaoDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.descricaoDataGridViewTextBoxColumn.DataPropertyName = "Descricao";
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.descricaoDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle8;
+            this.descricaoDataGridViewTextBoxColumn.HeaderText = "Descricao";
+            this.descricaoDataGridViewTextBoxColumn.Name = "descricaoDataGridViewTextBoxColumn";
+            this.descricaoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.descricaoDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // dificuldadeDataGridViewTextBoxColumn
+            // 
+            this.dificuldadeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dificuldadeDataGridViewTextBoxColumn.DataPropertyName = "Dificuldade";
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dificuldadeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle9;
+            this.dificuldadeDataGridViewTextBoxColumn.FillWeight = 20F;
+            this.dificuldadeDataGridViewTextBoxColumn.HeaderText = "Dificuldade";
+            this.dificuldadeDataGridViewTextBoxColumn.Name = "dificuldadeDataGridViewTextBoxColumn";
+            this.dificuldadeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.dificuldadeDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // habilidadeModelBindingSource
+            // 
+            this.habilidadeModelBindingSource.DataSource = typeof(RPGCompanion.Classes.Habilidade);
+            // 
             // tabItens
             // 
+            this.tabItens.BackColor = System.Drawing.Color.Chocolate;
+            this.tabItens.Controls.Add(this.groupBox6);
+            this.tabItens.Controls.Add(this.groupBox5);
+            this.tabItens.Controls.Add(this.groupBox4);
+            this.tabItens.Controls.Add(this.groupBox3);
             this.tabItens.Location = new System.Drawing.Point(4, 22);
             this.tabItens.Name = "tabItens";
             this.tabItens.Padding = new System.Windows.Forms.Padding(3);
             this.tabItens.Size = new System.Drawing.Size(654, 634);
             this.tabItens.TabIndex = 1;
             this.tabItens.Text = "Itens";
-            this.tabItens.UseVisualStyleBackColor = true;
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.BackColor = System.Drawing.Color.SaddleBrown;
+            this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox6.ForeColor = System.Drawing.SystemColors.Info;
+            this.groupBox6.Location = new System.Drawing.Point(423, 310);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(223, 278);
+            this.groupBox6.TabIndex = 2;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Consumíveis";
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.BackColor = System.Drawing.Color.SaddleBrown;
+            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox5.ForeColor = System.Drawing.SystemColors.Info;
+            this.groupBox5.Location = new System.Drawing.Point(423, 6);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(223, 278);
+            this.groupBox5.TabIndex = 1;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Acessórios";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.BackColor = System.Drawing.Color.SaddleBrown;
+            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4.ForeColor = System.Drawing.SystemColors.Info;
+            this.groupBox4.Location = new System.Drawing.Point(8, 310);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(400, 280);
+            this.groupBox4.TabIndex = 1;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Armaduras";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.BackColor = System.Drawing.Color.SaddleBrown;
+            this.groupBox3.Controls.Add(this.dataGridView1);
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.ForeColor = System.Drawing.SystemColors.Info;
+            this.groupBox3.Location = new System.Drawing.Point(8, 6);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(400, 280);
+            this.groupBox3.TabIndex = 0;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Armas";
             // 
             // tabHistoria
             // 
@@ -498,44 +608,13 @@ namespace RPGCompanion
             this.tabHistoria.Text = "História";
             this.tabHistoria.UseVisualStyleBackColor = true;
             // 
-            // habilidadeModelBindingSource
+            // dataGridView1
             // 
-            this.habilidadeModelBindingSource.DataSource = typeof(RPGCompanion.Classes.HabilidadeModel);
-            // 
-            // nomeDataGridViewTextBoxColumn
-            // 
-            this.nomeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.nomeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
-            this.nomeDataGridViewTextBoxColumn.FillWeight = 25F;
-            this.nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
-            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
-            this.nomeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.nomeDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // descricaoDataGridViewTextBoxColumn
-            // 
-            this.descricaoDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.descricaoDataGridViewTextBoxColumn.DataPropertyName = "Descricao";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.descricaoDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
-            this.descricaoDataGridViewTextBoxColumn.HeaderText = "Descricao";
-            this.descricaoDataGridViewTextBoxColumn.Name = "descricaoDataGridViewTextBoxColumn";
-            this.descricaoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.descricaoDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // dificuldadeDataGridViewTextBoxColumn
-            // 
-            this.dificuldadeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dificuldadeDataGridViewTextBoxColumn.DataPropertyName = "Dificuldade";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dificuldadeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle4;
-            this.dificuldadeDataGridViewTextBoxColumn.FillWeight = 20F;
-            this.dificuldadeDataGridViewTextBoxColumn.HeaderText = "Dificuldade";
-            this.dificuldadeDataGridViewTextBoxColumn.Name = "dificuldadeDataGridViewTextBoxColumn";
-            this.dificuldadeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.dificuldadeDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(6, 25);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(388, 249);
+            this.dataGridView1.TabIndex = 0;
             // 
             // frmFichaPlayer
             // 
@@ -558,6 +637,9 @@ namespace RPGCompanion
             this.tabHabilidades.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvHabilidades)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.habilidadeModelBindingSource)).EndInit();
+            this.tabItens.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -571,7 +653,6 @@ namespace RPGCompanion
         private System.Windows.Forms.TabPage tabHabilidades;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label lblAlcunha;
         private System.Windows.Forms.Label lblNome;
@@ -602,6 +683,12 @@ namespace RPGCompanion
         private System.Windows.Forms.DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn descricaoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dificuldadeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 

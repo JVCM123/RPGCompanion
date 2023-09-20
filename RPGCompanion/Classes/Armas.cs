@@ -6,10 +6,18 @@ using System.Threading.Tasks;
 
 namespace RPGCompanion.Classes
 {
-    public class Habilidade
+
+    public class Armas
     {
+        private Utilitarios util = new Utilitarios();
+
         public string Nome { get; set; }
-        public string Dificuldade { get; set; }
-        public string Descricao { get; set; }
+
+
+
+
+
+
+        private int _dado { get; set; }
     }
 }
